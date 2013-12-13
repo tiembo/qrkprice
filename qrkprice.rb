@@ -13,8 +13,9 @@ btc_html = Curl.get(btcusd_url2).body_str
 btcusd2 = JSON.parse(btc_html)['btc_to_usd'].to_f
 
 #debug
-puts btcusd1
-puts btcusd2
+#puts btcusd1
+#puts btcusd2
+
 btcusd = (btcusd1 + btcusd2) / 2
 
 # fetch QRK/BTC data
